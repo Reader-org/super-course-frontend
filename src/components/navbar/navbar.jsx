@@ -5,8 +5,8 @@ class Navbar extends React.Component{
     render(){
         return(
            
-            <nav className="navbar navbar-expand-lg navbar-light bg-dark text-white">
-                <Link className="navbar-brand text-white" href="/">SuperCourses</Link>
+            <nav className="navbar navbar-expand-lg navbar-light bg-dark text-white ">
+                <Link className="navbar-brand text-white" to="/">SuperCourses</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -14,7 +14,7 @@ class Navbar extends React.Component{
                 <div className="collapse navbar-collapse text-white" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto text-white">
                     <li className="nav-item active text-white">
-                        <Link className="nav-link text-white" to="/">Home <span class="sr-only">(current)</span></Link>
+                        <Link className="nav-link text-white" to="/">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link text-white" to="/category">Category</Link>

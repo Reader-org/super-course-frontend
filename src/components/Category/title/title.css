@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Kurale&display=swap');
+
+.Heading h1{
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Kurale','Poppins',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(253, 182, 4);
+}
+
+.Heading p{
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Kurale','Poppins',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image{
+    width: 300px;
+    height: auto;
+
+}
+
+img{
+    width: 100%;
+}
