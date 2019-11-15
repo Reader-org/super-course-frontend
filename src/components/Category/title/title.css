@@ -22,3 +22,10 @@
 img{
     width: 100%;
 }
+
+
+.card{
+    width: 30rem;
+    float: left;
+    margin: 3%;
+}
