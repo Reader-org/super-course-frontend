@@ -6,27 +6,16 @@ import { Link } from 'react-router-dom';
 const Cards = ({name,icon})=>{
 
     return(
-        <div className="wrapper">
+        <div className="wrapper mx-3 my-5">
 
-        
-            <div class="card">
-                <div class="card-body">
+            <div className="card">
+                <div className="card-body">
                     <h5 className="card-title text-center"><i className={icon}></i><br/>&nbsp;{name}</h5>
                     <Link  to={"category/"+name} >View Courses</Link>
                 </div>
             </div>
 
         </div>
-
-        // <div className="cards">
-                                        
-        // <h1>
-        // <i className={icon}></i>&nbsp;
-        //     {
-        //         name
-        //     }
-        // </h1>
-        // </div>
     )
 }
 
@@ -52,14 +41,16 @@ class Data extends React.Component{
     render(){
         return(
             <>
-                <div className="ml-5 my-5">
+                <div className="my-5 container-fluid mx-auto">
+                   <div className="row ml-auto center">
                     {
                         this.state.categories.map(category=>{
                             return(
-                               <Cards key={category.name} name={category.name} icon={category.icon} /> 
+                               <Cards  key={category.name} name={category.name} icon={category.icon} /> 
                             )
                         })
                     }
+                    </div>
                 </div>
             </>
         )

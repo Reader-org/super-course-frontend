@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
+import Display from '../reusable/display'
+
 
 export default class CategoryData extends Component {
     constructor(props){
@@ -10,7 +12,7 @@ export default class CategoryData extends Component {
     }
 
     componentDidMount(){
-        console.log(this.props)
+        // console.log(this.props)
         console.log(this.props.match.params.category);
         Axios.get('http://localhost:5000/courses/get/category/'+this.props.match.params.category)
         .then((response)=>{
@@ -22,18 +24,16 @@ export default class CategoryData extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="container my-5 py-5">
+            <div className="row">
                 {
                     this.state.courses.map(eachcourse=>{
                         return(
-                            <h1 key={eachcourse.id}>
-                                {
-                                    eachcourse.title
-                                }
-                            </h1>
+                           <Display key={eachcourse.id} name={eachcourse.title} image={eachcourse.image} />
                         )
                     })
                 }
+            </div>
             </div>
         )
     }
