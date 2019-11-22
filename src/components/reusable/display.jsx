@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './display.css'
 
 export default class Display extends Component {
    
@@ -8,38 +9,43 @@ export default class Display extends Component {
     }
     render() {
         return (
-                <div className="wrapper mx-5">
-                    <div className="card">
+                <div className="cont mt-5 mb-3 mx-auto">
+                    <div className="course-cards">
                         <div className="card-body">
                             <h3 className="title text-primary">
                                 {
                                     this.props.name
                                 }
                             </h3>
-                            <div className="card-body">
+                            <div className="mt-4">
                                 <p>
                                    {
                                        this.props.description
                                    }
                                 </p>
                             </div>
-                            <div className="card-body">
+                            <div className="mt-2 mb-3">
                                 <p className="text-muted">
-                                  Instructor: {
+                                  Instructor: <span className="des-data">{
                                        this.props.instructor
                                    }
+                                   </span>
                                    &nbsp;
                                    &nbsp;
                                    &nbsp;
-                                   Level: {
+                                   <br/>
+                                   Level: <span className="des-data"> {
                                        this.props.level
                                    }
+                                   </span>
                                    &nbsp;
                                    &nbsp;
                                    &nbsp;
-                                    Language: {
+                                   <br/>
+                                    Language: <span className="des-data">{
                                        this.props.language
                                    }
+                                   </span>
                                 </p>
                             </div>
                             <div className="">

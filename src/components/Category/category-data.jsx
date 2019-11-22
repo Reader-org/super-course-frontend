@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
-import Display from '../reusable/display'
+import Display from '../reusable/display';
 
 
 export default class CategoryData extends Component {
@@ -14,7 +14,7 @@ export default class CategoryData extends Component {
     componentDidMount(){
         // console.log(this.props)
         console.log(this.props.match.params.category);
-        Axios.get('http://localhost:5000/courses/get/category/'+this.props.match.params.category)
+        Axios.get('https://sudocourses.herokuapp.com/courses/get/category/'+this.props.match.params.category)
         .then((response)=>{
             console.log(response.data);
             this.setState({
@@ -24,16 +24,16 @@ export default class CategoryData extends Component {
     }
     render() {
         return (
-            <div className="container my-5 py-5">
-            <div className="row">
+            <div className="text-center col-lg-12 center">
                 {
                     this.state.courses.map(eachcourse=>{
                         return(
-                           <Display key={eachcourse.id} name={eachcourse.title} link={eachcourse.link} description={eachcourse.Description} instructor={eachcourse.Instructor} id={eachcourse.id} url={eachcourse.request.Url} level={eachcourse.Level} language={eachcourse.Language}/>
+                            <div key={eachcourse.id} className="mt-5">
+                                <Display className="mt-5" name={eachcourse.title} link={eachcourse.link} description={eachcourse.Description} instructor={eachcourse.Instructor} id={eachcourse.id} url={eachcourse.request.Url} level={eachcourse.Level} language={eachcourse.Language}/>
+                           </div>
                         )
                     })
                 }
-            </div>
             </div>
         )
     }

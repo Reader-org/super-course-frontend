@@ -27,7 +27,7 @@ class Data extends React.Component{
         }
     }
     componentDidMount(){
-        axios.get('http://localhost:5000/category/get')
+        axios.get('https://sudocourses.herokuapp.com/category/get')
         .then(response=>{
             console.log(response.data.Category);
             this.setState({

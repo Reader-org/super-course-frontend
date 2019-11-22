@@ -6,7 +6,7 @@ import './App.css';
 import Navbar from './components/navbar/navbar';
 import Home from './components/main/home';
 import Category from './components/Category/category';
-import CategoryData from './components/Category/category-data'
+import CategoryData from './components/Category/category-data';
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
         <Route path="/category/:category" component={CategoryData} />
 
      </Router>
+    
     </div>
   );
 }

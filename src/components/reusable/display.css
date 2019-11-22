@@ -1,0 +1,44 @@
+
+.cont{
+    margin: 3%!important;
+    height:auto;
+    width:100%;
+
+}
+.course-cards{
+    width:25vw;
+    float:left;
+    border: 1px solid grey;
+    margin: 3%;
+    min-height:400px;
+    height:auto;
+}
+
+.des-data{
+    color: #e6891d;
+    margin-left: 1%;
+}
+
+
+@media(max-width:1500px){
+    .course-cards{
+        width: 35vw;
+        margin: 2%;
+    }
+}
+
+
+@media(max-width:1200px){
+    .course-cards{
+        width:40vw;
+        margin: 2%;
+        height:400px;
+    }
+}
+
+@media(max-width:700px){
+    .course-cards{
+    width:80vw;
+    margin: 3%;
+}
+}
