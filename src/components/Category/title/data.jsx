@@ -8,7 +8,7 @@ const Cards = ({name,icon})=>{
     return(
         <div className="wrapper mx-3 my-5">
 
-            <div className="card">
+            <div className="cards">
                 <div className="card-body">
                     <h5 className="card-title text-center"><i className={icon}></i><br/>&nbsp;{name}</h5>
                     <Link  to={"category/"+name} >View Courses</Link>
@@ -41,12 +41,12 @@ class Data extends React.Component{
     render(){
         return(
             <>
-                <div className="my-5 container-fluid mx-auto">
-                   <div className="row ml-auto center">
+                <div className="col-lg-8 my-5 center mx-auto">
+                   <div className="row ml-auto">
                     {
                         this.state.categories.map(category=>{
                             return(
-                               <Cards  key={category.name} name={category.name} icon={category.icon} /> 
+                               <Cards key={category.name} name={category.name} icon={category.icon} /> 
                             )
                         })
                     }

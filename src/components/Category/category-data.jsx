@@ -29,7 +29,7 @@ export default class CategoryData extends Component {
                 {
                     this.state.courses.map(eachcourse=>{
                         return(
-                           <Display key={eachcourse.id} name={eachcourse.title} image={eachcourse.image} />
+                           <Display key={eachcourse.id} name={eachcourse.title} link={eachcourse.link} description={eachcourse.Description} instructor={eachcourse.Instructor} id={eachcourse.id} url={eachcourse.request.Url} level={eachcourse.Level} language={eachcourse.Language}/>
                         )
                     })
                 }
