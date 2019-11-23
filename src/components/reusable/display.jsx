@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './display.css'
+import './display.css';
+import pro from './pro.svg';
 
 export default class Display extends Component {
    
@@ -12,6 +13,7 @@ export default class Display extends Component {
                 <div className="cont mt-5 mb-3 mx-auto">
                     <div className="course-cards">
                         <div className="card-body">
+                            <img src={pro} alt="computes mobiles" />
                             <h3 className="title text-primary">
                                 {
                                     this.props.name

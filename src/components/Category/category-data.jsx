@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
 import Display from '../reusable/display';
-
+import Heading from '../reusable/heading'
 
 export default class CategoryData extends Component {
     constructor(props){
@@ -24,6 +24,10 @@ export default class CategoryData extends Component {
     }
     render() {
         return (
+            <>
+            <div className="heading">
+                <Heading Heading={this.props.match.params.category} subheading={`Learn ${this.props.match.params.category} from the top courses provided by our collaborators and pears`}/>
+            </div>
             <div className="text-center col-lg-12 center">
                 {
                     this.state.courses.map(eachcourse=>{
@@ -35,6 +39,7 @@ export default class CategoryData extends Component {
                     })
                 }
             </div>
+            </>
         )
     }
 }
