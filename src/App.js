@@ -8,6 +8,7 @@ import Home from './components/main/home';
 import Category from './components/Category/category';
 import CategoryData from './components/Category/category-data';
 import Add from './components/reusable/add-course';
+import AllCourses from './components/reusable/allCourses';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         
         
         <Route path="/category/:category" component={CategoryData} />
+
+        <Route path="/all-course" component={AllCourses} />
 
         <Route path="/add/course" component={Add} />
 

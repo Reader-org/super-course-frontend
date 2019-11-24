@@ -55,6 +55,7 @@ class Add extends React.Component{
         // console.log(this.state);
     }
 
+    
   
 
     handleSubmit(e){
@@ -69,7 +70,9 @@ class Add extends React.Component{
                 Level:"",
                 Category:"",
                 message:"Course Added Successfully"
-            })
+            });
+
+           this.disapper();
         }).catch(err=>{
             alert(err);
         });
@@ -77,12 +80,23 @@ class Add extends React.Component{
         e.preventDefault();
     }
 
+     disapper = ()=> {
+        setTimeout(() => {
+            this.setState({
+                message:""
+            })
+            console.log('I am working');
+        }, 5000);
+    }
+
+
+
 
 
     render(){
         return(
             <>
-               {this.state.message?<div class="alert alert-success" role="alert">
+               {this.state.message?<div className="alert alert-success" role="alert">
                    {this.state.message}
                  </div>
                  :""

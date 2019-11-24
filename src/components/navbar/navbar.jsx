@@ -20,6 +20,9 @@ class Navbar extends React.Component{
                         <Link className="nav-link text-white" to="/category">Category</Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link text-white" to="/all-course">All Course</Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="nav-link text-white" to="/add/course">Add Course</Link>
                     </li>
                     </ul>

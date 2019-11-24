@@ -10,10 +10,16 @@
     float:left;
     border: 1px solid grey;
     margin: 3%;
-    min-height:400px;
+    min-height:650px;
     height:auto;
     transition: 1s ease-in;
     border-radius: 20px;
+}
+
+.all-course{
+    height: auto;
+    width: 40vw;
+    margin-left: 25vw;
 }
 
 .course-cards:hover{
@@ -48,11 +54,24 @@
         margin: 2%;
         height:auto;
     }
+
+    .all-course{
+        height: auto;
+        width: 80vw;
+        margin-left: 10vw;
+    }
 }
 
 @media(max-width:700px){
     .course-cards{
+    min-height: 500px;
+    height: auto;
     width:80vw;
     margin: 3%;
+}
+.all-course{
+    height: auto;
+    width: 90vw;
+    margin-left: 0vw;
 }
 }
