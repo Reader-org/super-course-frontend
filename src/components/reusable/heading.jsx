@@ -4,7 +4,7 @@ import './heading.css';
 
 const Heading = (props)=>{
     return(
-        <div className="heading-title my-5 py-5">
+        <div className="heading my-5 py-5">
             <div className="main-heading">
                 <h1 className="heading-text">
                     {

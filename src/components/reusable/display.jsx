@@ -6,7 +6,7 @@ export default class Display extends Component {
    
     courseRedirect =(e)=>{
         window.location=e;
-        console.log(e);
+        // console.log(e);
     }
     render() {
         return (

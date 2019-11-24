@@ -14,12 +14,15 @@ export default class AllCourses extends Component {
 
     componentDidMount(){
         // console.log(this.props)
+        
         Axios.get('https://sudocourses.herokuapp.com/courses/get/')
         .then((response)=>{
             console.log(response.data);
             this.setState({
                 courses: response.data.courses
             })
+        }).catch(err=>{
+            alert(err);
         })
     }
     render() {

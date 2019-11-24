@@ -13,7 +13,7 @@ import AllCourses from './components/reusable/allCourses';
 
 function App() {
   return (
-    <div className="col-lg-12 col-sm-12 col-md-12">
+    <div className="">
      <Router>
      <Navbar/>
        <Route exact path="/" component={Home} />

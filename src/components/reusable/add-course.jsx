@@ -3,6 +3,7 @@ import './add.css';
 import Axios from 'axios';
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import Heading from './heading';
 
 class Add extends React.Component{
     
@@ -101,6 +102,8 @@ class Add extends React.Component{
                  </div>
                  :""
                  }
+
+                 <Heading Heading="Add A Course" subheading="If you know a super course feel free to add it."/>
                
                 <div className="form col-lg-8 mx-auto my-5">
                     <form method="POST" onSubmit={this.handleSubmit.bind(this)} >

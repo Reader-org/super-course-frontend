@@ -1,11 +1,13 @@
 import React from 'react'
+import HeroSection from './heroSection';
+import './main.css'
 
 class Home extends React.Component{
     render(){
         return(
-            <h1>
-                This is Home Component
-            </h1>
+            <div className="main-page">
+                <HeroSection/>
+           </div>
         )
     }
 }
