@@ -2,6 +2,7 @@ import React from 'react';
 import './main.css'
 import { Link } from 'react-router-dom';
 
+
 const FewCategory = ()=>{
     return(
         <div className="category-cards-home">

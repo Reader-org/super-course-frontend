@@ -79,9 +79,8 @@
 }
 
 .few-category{
-    background: #fff;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
@@ -91,6 +90,43 @@
     height: auto;
     margin-left: 15vw;
 }
+
+.contributions{
+    height: 50vh;
+    width: 100vw;
+}
+
+.foot-set{
+    height: 300px;
+    width: 80vw;
+    margin: auto;
+    background: url(./Slanted-Gradient.svg)no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    border-radius: 40px;
+    text-align: center;
+    font-family: 'Kurale',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.foot-set h1{
+    color: #e6891d;
+}
+
+.buttons-suc .btn{
+    margin-left: 2%!important;
+    color: white!important;
+}
+
+.footer-component{
+    height: 100px;
+    font-family: 'Kurale',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-component p{
+    font-size: 1.3rem;
+}
+
 
 @media (max-width:1200px){
     .branding h1{
@@ -119,7 +155,6 @@
         min-height: 200vh;
     }
     .few-category{
-        background: #fff;
         width: 100vw;
         min-height: 200vh;
         height: auto;
@@ -161,7 +196,7 @@
     }
     .info-cards{
         width: 100vw;
-        min-height: 200vh;
+        min-height: 170vh;
     }
     
     .card-sec{
@@ -169,7 +204,6 @@
         min-height: 200vh;
     }
     .few-category{
-        background: #fff;
         width: 100vw;
         min-height: 200vh;
         height: auto;
@@ -188,5 +222,20 @@
         font-family: 'Kurale',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-style: oblique;
     }
+    .category-cards-home {
+        width: 70vw;
+        height: auto;
+        margin-left: 0;
+    }
+    .foot-set{
+        height: 300px;
+        width: 100vw;
+        margin: auto;
+        border-radius: 0;
+        text-align: center;
+        font-family: 'Kurale',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+    }
+    
     
 }
