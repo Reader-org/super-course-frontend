@@ -20,7 +20,7 @@ class Home extends React.Component{
                     </div>
                 </div>
                 <div className="few-category">
-                    <div className="col-lg-7 col-md-7 col-sm-10">
+                    <div className="col-lg-10 col-md-10 col-sm-12">
                         <FewCategory/>
                     </div>
                 </div>
