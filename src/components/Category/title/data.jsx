@@ -28,7 +28,7 @@ class Data extends React.Component{
     }
     componentDidMount(){
 
-        setTimeout(
+        
         axios.get('https://sudocourses.herokuapp.com/category/get')
         .then(response=>{
             console.log(response.data.Category);
@@ -38,7 +38,7 @@ class Data extends React.Component{
         })
         .catch(err=>{
             alert(err)
-        }),20000);
+        })
     }
     render(){
         return(

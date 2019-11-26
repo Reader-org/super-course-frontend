@@ -1,8 +1,7 @@
 import React from 'react'
-import Heading from '../reusable/heading'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
-
+import hero from './hero.svg'
 
 
 class HeroSection extends React.Component{
@@ -14,7 +13,7 @@ class HeroSection extends React.Component{
 
     render(){
         return(
-            <div className="title" data-aos="fade" data-aos-duration="1500">
+            <div className="title-brand" data-aos="fade" data-aos-duration="2500">
                 <div className="branding">
                     <div className="main-page-text">
                         <h1>
@@ -24,6 +23,9 @@ class HeroSection extends React.Component{
                             The Courses which keeps you going
                         </h3>
                     </div>
+                </div>
+                <div className="col col-lg-8 col-md-8 col-sm-10 mx-auto hero-img">
+                    <img src={hero} alt="Hero-section-display"/>
                 </div>
            </div>
         )
