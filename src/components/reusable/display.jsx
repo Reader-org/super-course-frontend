@@ -20,7 +20,7 @@ export default class Display extends Component {
                                 }
                             </h3>
                             <div className="mt-4">
-                                <p>
+                                <p className="text-muted">
                                    {
                                        this.props.description
                                    }
@@ -50,11 +50,11 @@ export default class Display extends Component {
                                    </span>
                                 </p>
                             </div>
-                            <div className="">
-                                <button className="btn btn-primary" onClick={()=>this.courseRedirect(this.props.link)}>
-                                    Check It
-                                </button>
-
+                            <div className="btn btn-danger">
+                                <a href={this.props.link} rel="noopener noreferrer" className="text-white" target="_blank">
+                                     Check It
+                                </a>
+                                
                             </div>
                         </div>
                     </div>

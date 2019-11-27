@@ -25,11 +25,11 @@ class Home extends React.Component{
                 <Heading Heading="Getting Started" subheading="Here are some categories to get started with"/>
                 <div className="few-category">
                     
-                    <div className="col-lg-10 col-md-10 col-sm-12">
+                    <div className="col-lg-10 col-md-10 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
                         <FewCategory/>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <Heading Heading="Want to Contribute" subheading="Here is how you can contribute"/>
                     <Contribution />
                 </div>

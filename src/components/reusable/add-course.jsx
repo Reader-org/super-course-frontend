@@ -96,17 +96,17 @@ class Add extends React.Component{
 
     render(){
         return(
-            <>
+            <div className="height-width mx-0">
                {this.state.message?<div className="alert alert-success" role="alert">
                    {this.state.message}
                  </div>
                  :""
                  }
 
-                 <Heading Heading="Add A Course" subheading="If you know a super course feel free to add it."/>
+                 <Heading Heading="Add A Course" c="text-white" subheading="If you know a super course feel free to add it."/>
                
                 <div className="form col-lg-8 mx-auto my-5">
-                    <form method="POST" onSubmit={this.handleSubmit.bind(this)} >
+                    <form method="POST" className="text-white" onSubmit={this.handleSubmit.bind(this)} >
                     <div className="form-row">
                         <div className="form-group col-md-6">
                         <label htmlFor="inputtitle4">Course Title</label>
@@ -155,7 +155,7 @@ class Add extends React.Component{
                     <button type="submit"  className="btn btn-primary">Add Course</button>
                     </form>
                 </div>
-            </>
+            </div>
         )
     }
 }

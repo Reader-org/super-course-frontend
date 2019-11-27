@@ -4,14 +4,14 @@ import './heading.css';
 
 const Heading = (props)=>{
     return(
-        <div className="heading my-5 py-5">
+        <div className="heading mb-5">
             <div className="main-heading">
                 <h1 className="heading-text">
                     {
                         props.Heading
                     }
                 </h1>
-                <p>
+                <p className={props.c}>
                     {
                         props.subheading
                     }
